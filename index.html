@@ -6,6 +6,36 @@
 <title>Ingeniería y Construcción CM Ltda. | Remodelación, Construcción y Mantención</title>
 <meta name="description" content="Empresa de remodelación y construcción con más de 30 años de experiencia. Especialistas en remodelación de oficinas, sucursales y espacios corporativos en funcionamiento. Cotice su proyecto.">
 <link rel="stylesheet" href="styles.css">
+
+<!-- La imagen de portada se pide de inmediato: es lo primero que ve el visitante -->
+<link rel="preload" as="image" href="img/hero-sucursal.jpg" fetchpriority="high">
+
+<!-- ===================================================== META PIXEL (Facebook)
+     PENDIENTE: reemplazar TU_PIXEL_ID_AQUI por el ID numérico del píxel
+     (Meta Events Manager > Orígenes de datos > su píxel > el número de 15-16
+     dígitos). Mientras diga TU_PIXEL_ID_AQUI el píxel queda inactivo y no
+     carga nada, así que el sitio funciona igual.
+     ========================================================================= -->
+<script>
+  window.META_PIXEL_ID = "TU_PIXEL_ID_AQUI";
+
+  if (window.META_PIXEL_ID && window.META_PIXEL_ID !== "TU_PIXEL_ID_AQUI") {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', window.META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=TU_PIXEL_ID_AQUI&ev=PageView&noscript=1"></noscript>
+<!-- ================================================================ FIN PIXEL -->
 </head>
 <body>
 
@@ -55,9 +85,9 @@
         <a href="#obras" class="btn btn-ghost">Ver obras realizadas</a>
       </div>
       <div class="hero-trust">
-        <div><b data-count="30" data-suffix="+">0</b><span>años de experiencia</span></div>
-        <div><b data-count="500" data-suffix="+">0</b><span>proyectos ejecutados</span></div>
-        <div><b data-count="32000" data-suffix="+" data-format="thousand">0</b><span>m² construidos</span></div>
+        <div><b data-count="30" data-suffix="+">30+</b><span>años de experiencia</span></div>
+        <div><b data-count="500" data-suffix="+">500+</b><span>proyectos ejecutados</span></div>
+        <div><b data-count="32000" data-suffix="+" data-format="thousand">32.000+</b><span>m² construidos</span></div>
         <div><b>14</b><span>ciudades, de Iquique a Punta Arenas</span></div>
       </div>
     </div>
@@ -139,8 +169,9 @@
 
         <button type="submit" class="btn btn-primary btn-block">Enviar solicitud</button>
         <p class="form-status" id="quoteStatus" role="status"></p>
-        <p class="form-note">Al enviar se abrirá su correo con el mensaje listo para despachar.
-        También puede escribirnos directamente a fernando.casas@ingenieriacasas.cl</p>
+        <p class="form-note">Le respondemos dentro de 24 horas hábiles. Sus datos se usan solo
+        para contactarlo por esta solicitud. También puede escribirnos directamente a
+        <a href="mailto:fernando.casas@ingenieriacasas.cl">fernando.casas@ingenieriacasas.cl</a></p>
       </form>
     </div>
   </div>
@@ -160,7 +191,7 @@
 
       <article class="servicio-card featured reveal">
         <div class="servicio-media">
-          <img src="img/oficinas-corporativas.jpg" alt="Remodelación de oficinas corporativas" loading="lazy">
+          <img width="512" height="384" decoding="async" src="img/oficinas-corporativas.jpg" alt="Remodelación de oficinas corporativas" loading="lazy">
           <span class="servicio-badge">Nuestra especialidad</span>
         </div>
         <div class="servicio-body">
@@ -183,7 +214,7 @@
 
       <article class="servicio-card reveal">
         <div class="servicio-media">
-          <img src="img/ovosur-planta.jpg" alt="Construcción y obra gruesa" loading="lazy">
+          <img width="768" height="576" decoding="async" src="img/ovosur-planta.jpg" alt="Construcción y obra gruesa" loading="lazy">
         </div>
         <div class="servicio-body">
           <h3>Construcción</h3>
@@ -200,7 +231,7 @@
 
       <article class="servicio-card reveal">
         <div class="servicio-media">
-          <img src="img/fundacion-chile.jpg" alt="Mantención de edificios" loading="lazy">
+          <img width="768" height="543" decoding="async" src="img/fundacion-chile.jpg" alt="Mantención de edificios" loading="lazy">
         </div>
         <div class="servicio-body">
           <h3>Mantención</h3>
@@ -217,7 +248,7 @@
 
       <article class="servicio-card reveal">
         <div class="servicio-media">
-          <img src="img/sucursal-cajas.jpg" alt="Locales comerciales y sucursales" loading="lazy">
+          <img width="480" height="640" decoding="async" src="img/sucursal-cajas.jpg" alt="Locales comerciales y sucursales" loading="lazy">
         </div>
         <div class="servicio-body">
           <h3>Locales comerciales y sucursales</h3>
@@ -229,7 +260,7 @@
 
       <article class="servicio-card reveal">
         <div class="servicio-media">
-          <img src="img/casino-restaurant.jpg" alt="Interiorismo y diseños exclusivos" loading="lazy">
+          <img width="512" height="384" decoding="async" src="img/casino-restaurant.jpg" alt="Interiorismo y diseños exclusivos" loading="lazy">
         </div>
         <div class="servicio-body">
           <h3>Interiorismo y diseños exclusivos</h3>
@@ -241,7 +272,7 @@
 
       <article class="servicio-card reveal">
         <div class="servicio-media">
-          <img src="img/jardin-quincho.jpg" alt="Viviendas particulares" loading="lazy">
+          <img width="512" height="384" decoding="async" src="img/jardin-quincho.jpg" alt="Viviendas particulares" loading="lazy">
         </div>
         <div class="servicio-body">
           <h3>Viviendas particulares</h3>
@@ -277,7 +308,7 @@
 
       <figure class="obra" data-cat="bancario" data-full="img/casa-central-hall.jpg"
               data-title="Casa Central Banco de Chile" data-desc="Restauración y remodelación del hall principal, con recuperación de maderas y elementos patrimoniales. Ahumada #251, Santiago.">
-        <img src="img/casa-central-hall.jpg" alt="Hall Casa Central Banco de Chile" loading="lazy">
+        <img width="1091" height="819" decoding="async" src="img/casa-central-hall.jpg" alt="Hall Casa Central Banco de Chile" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Casa Central — Hall principal</h3>
@@ -287,7 +318,7 @@
 
       <figure class="obra" data-cat="bancario corporativo" data-full="img/sala-directorio.jpg"
               data-title="Sala de Directorio — Casa Central" data-desc="Remodelación, reparación estructural y habilitación tecnológica de la Sala de Directorio, manteniendo el carácter original del recinto.">
-        <img src="img/sala-directorio.jpg" alt="Sala de Directorio Banco de Chile" loading="lazy">
+        <img width="480" height="640" decoding="async" src="img/sala-directorio.jpg" alt="Sala de Directorio Banco de Chile" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Sala de Directorio</h3>
@@ -297,7 +328,7 @@
 
       <figure class="obra" data-cat="bancario" data-full="img/sucursal-temuco.jpg"
               data-title="Sucursal Banco de Chile — Temuco" data-desc="Remodelación integral de fachada e interiores de la sucursal de Temuco, ejecutada en horarios fuera de atención de público.">
-        <img src="img/sucursal-temuco.jpg" alt="Sucursal Banco de Chile Temuco" loading="lazy">
+        <img width="896" height="672" decoding="async" src="img/sucursal-temuco.jpg" alt="Sucursal Banco de Chile Temuco" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Sucursal Temuco</h3>
@@ -307,7 +338,7 @@
 
       <figure class="obra" data-cat="bancario corporativo" data-full="img/centro-recreativo.jpg"
               data-title="Centro Recreativo Banco de Chile" data-desc="Construcción y habilitación del centro recreativo, incluyendo salones, terrazas y áreas comunes.">
-        <img src="img/centro-recreativo.jpg" alt="Centro Recreativo Banco de Chile" loading="lazy">
+        <img width="768" height="576" decoding="async" src="img/centro-recreativo.jpg" alt="Centro Recreativo Banco de Chile" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Centro Recreativo</h3>
@@ -317,7 +348,7 @@
 
       <figure class="obra" data-cat="corporativo" data-full="img/fundacion-chile.jpg"
               data-title="Fundación Chile — Ampliación" data-desc="Ampliación de la zona de Presidencia para oficinas y salón de reuniones, construcción de acceso principal y remodelación de casino y salones de conferencias.">
-        <img src="img/fundacion-chile.jpg" alt="Fundación Chile" loading="lazy">
+        <img width="768" height="543" decoding="async" src="img/fundacion-chile.jpg" alt="Fundación Chile" loading="lazy">
         <figcaption>
           <span class="obra-cat">Fundación Chile</span>
           <h3>Ampliación zona Presidencia</h3>
@@ -327,7 +358,7 @@
 
       <figure class="obra" data-cat="industrial" data-full="img/ovosur-planta.jpg"
               data-title="OVOSUR — Ampliación de planta" data-desc="Ampliación de planta, oficinas y laboratorio (600 m²), ejecutada manteniendo la operación productiva habitual.">
-        <img src="img/ovosur-planta.jpg" alt="Planta industrial OVOSUR" loading="lazy">
+        <img width="768" height="576" decoding="async" src="img/ovosur-planta.jpg" alt="Planta industrial OVOSUR" loading="lazy">
         <figcaption>
           <span class="obra-cat">OVOSUR</span>
           <h3>Ampliación de planta</h3>
@@ -337,7 +368,7 @@
 
       <figure class="obra" data-cat="corporativo" data-full="img/centro-trabajo.jpg"
               data-title="Centros de trabajo corporativos" data-desc="Habilitación de áreas de trabajo colaborativo con terminaciones de alto estándar, ejecutadas por etapas sin interrumpir la operación.">
-        <img src="img/centro-trabajo.jpg" alt="Centro de trabajo corporativo" loading="lazy">
+        <img width="903" height="800" decoding="async" src="img/centro-trabajo.jpg" alt="Centro de trabajo corporativo" loading="lazy">
         <figcaption>
           <span class="obra-cat">Corporativo</span>
           <h3>Centros de trabajo</h3>
@@ -347,7 +378,7 @@
 
       <figure class="obra" data-cat="corporativo" data-full="img/oficinas-presidencia.jpg"
               data-title="Oficinas de Presidencia y Gerencia General" data-desc="Remodelación de oficinas de Presidencia y Gerencia General de Casa Central (600 m²), incluyendo reparaciones estructurales de 400 m² de losa.">
-        <img src="img/oficinas-presidencia.jpg" alt="Oficinas de presidencia" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/oficinas-presidencia.jpg" alt="Oficinas de presidencia" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Presidencia y Gerencia General</h3>
@@ -357,7 +388,7 @@
 
       <figure class="obra" data-cat="bancario" data-full="img/sucursal-cajas.jpg"
               data-title="Blindajes y cajas de atención a público" data-desc="Instalación de blindajes en cajas de atención a público, bóvedas de dinero y cajeros automáticos en sucursales a lo largo de Chile.">
-        <img src="img/sucursal-cajas.jpg" alt="Cajas de atención a público" loading="lazy">
+        <img width="480" height="640" decoding="async" src="img/sucursal-cajas.jpg" alt="Cajas de atención a público" loading="lazy">
         <figcaption>
           <span class="obra-cat">Banco de Chile</span>
           <h3>Blindajes y cajas de atención</h3>
@@ -367,7 +398,7 @@
 
       <figure class="obra" data-cat="residencial" data-full="img/casino-restaurant.jpg"
               data-title="Restaurante y salón de eventos" data-desc="Construcción y habilitación completa de salón, cocina y bar, con terminaciones de alto estándar e interiorismo a medida.">
-        <img src="img/casino-restaurant.jpg" alt="Restaurante y salón" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/casino-restaurant.jpg" alt="Restaurante y salón" loading="lazy">
         <figcaption>
           <span class="obra-cat">Diseños exclusivos</span>
           <h3>Restaurante y salón de eventos</h3>
@@ -377,7 +408,7 @@
 
       <figure class="obra" data-cat="residencial" data-full="img/cupula-lucarna.jpg"
               data-title="Cúpula y lucarna de diseño" data-desc="Ejecución de cúpula con lucarna y revestimiento vertical en maderas mixtas, obra singular de diseño exclusivo.">
-        <img src="img/cupula-lucarna.jpg" alt="Cúpula y lucarna" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/cupula-lucarna.jpg" alt="Cúpula y lucarna" loading="lazy">
         <figcaption>
           <span class="obra-cat">Diseños exclusivos</span>
           <h3>Cúpula y lucarna</h3>
@@ -387,7 +418,7 @@
 
       <figure class="obra" data-cat="residencial" data-full="img/jardin-quincho.jpg"
               data-title="Vivienda particular — Jardín y quincho" data-desc="Construcción, ampliación y remodelación de viviendas particulares con diseños exclusivos, terrazas, quinchos e iluminación arquitectónica.">
-        <img src="img/jardin-quincho.jpg" alt="Jardín y quincho vivienda particular" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/jardin-quincho.jpg" alt="Jardín y quincho vivienda particular" loading="lazy">
         <figcaption>
           <span class="obra-cat">Residencial</span>
           <h3>Vivienda particular</h3>
@@ -397,7 +428,7 @@
 
       <figure class="obra" data-cat="residencial" data-full="img/patio-cristal.jpg"
               data-title="Patio interior con cubierta de cristal" data-desc="Habilitación de patio interior con cubierta de cristal, revestimiento de madera y pavimento de piedra laja, ampliando el espacio habitable de la vivienda.">
-        <img src="img/patio-cristal.jpg" alt="Patio interior con cubierta de cristal" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/patio-cristal.jpg" alt="Patio interior con cubierta de cristal" loading="lazy">
         <figcaption>
           <span class="obra-cat">Diseños exclusivos</span>
           <h3>Patio con cubierta de cristal</h3>
@@ -407,7 +438,7 @@
 
       <figure class="obra" data-cat="residencial" data-full="img/casa-particular.jpg"
               data-title="Vivienda particular — Obra exterior" data-desc="Construcción y remodelación exterior de vivienda particular, incluyendo volumetría, terminaciones de fachada y cierres perimetrales.">
-        <img src="img/casa-particular.jpg" alt="Fachada de vivienda particular" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/casa-particular.jpg" alt="Fachada de vivienda particular" loading="lazy">
         <figcaption>
           <span class="obra-cat">Residencial</span>
           <h3>Obra exterior y fachada</h3>
@@ -417,7 +448,7 @@
 
       <figure class="obra" data-cat="residencial corporativo" data-full="img/mobiliario-cocina.jpg"
               data-title="Mobiliario y terminaciones a medida" data-desc="Ejecución de mobiliario a medida, cubiertas de granito, estanterías y terminaciones en madera para espacios de trabajo y servicio.">
-        <img src="img/mobiliario-cocina.jpg" alt="Mobiliario y terminaciones a medida" loading="lazy">
+        <img width="512" height="384" decoding="async" src="img/mobiliario-cocina.jpg" alt="Mobiliario y terminaciones a medida" loading="lazy">
         <figcaption>
           <span class="obra-cat">Diseños exclusivos</span>
           <h3>Mobiliario a medida</h3>
@@ -474,7 +505,7 @@
   <div class="container">
     <div class="nosotros-grid">
       <div class="nosotros-media reveal">
-        <img src="img/casa-central-hall-2.jpg" alt="Obra Casa Central Banco de Chile" loading="lazy">
+        <img width="640" height="480" decoding="async" src="img/casa-central-hall-2.jpg" alt="Obra Casa Central Banco de Chile" loading="lazy">
         <div class="nosotros-badge">
           <b>+30</b>
           <span>años construyendo confianza</span>
