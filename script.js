@@ -5,9 +5,9 @@
      Lo único que hay que editar a mano está en este bloque.
      ====================================================================== */
   var CONFIG = {
-    // Pegue aquí la URL /exec de Google Apps Script (ver GUIA-FORMULARIO.md).
-    // Mientras esté vacía, el formulario vuelve al modo antiguo (abre el correo).
-    ENDPOINT_FORMULARIO: "",
+    // URL /exec de Google Apps Script (ver GUIA-FORMULARIO.md).
+    // Si se deja vacía, el formulario vuelve al modo antiguo (abre el correo).
+    ENDPOINT_FORMULARIO: "https://script.google.com/macros/s/AKfycbwjqVhrtVMJ00OOISE6jsr45z3nWHjlv6rWWk5vcsH1DxM7GzuXA7cRXDT7zwZwSLeM/exec",
 
     // Correo de respaldo, usado solo si el endpoint de arriba está vacío.
     EMAIL: "fernando.casas@ingenieriacasas.cl"
